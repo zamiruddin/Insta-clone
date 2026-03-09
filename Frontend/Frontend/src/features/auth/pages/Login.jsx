@@ -18,8 +18,8 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     handleLogin(username, password)
-    .then((res) => {
-        console.log("Login successful:", res)
+    .then((response) => {
+        console.log("Login successful:", response)
         navigate('/')
     })
     .catch((error) => {
